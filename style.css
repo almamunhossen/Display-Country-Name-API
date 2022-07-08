@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+body {
+    background-color: #EEEEEE;
+    position: relative;
+}
+.main-text{
+    text-align: center;
+    margin: 2rem;  
+}
+.main-text::after{
+    content: " ";
+    display: block;
+    background: black;
+    width: 20%;
+    height: 2px;
+    left: 40%;
+    position: absolute;
+    margin-top: .5rem;
+}
+#countries{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: .5rem;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+#countries img {
+    width: 100px;
+    margin-top: 1rem;
+}
+
+#countries div {
+ border: 1px solid rgb(176, 176, 176);
+ border-radius: .5rem;
+ padding: 1.5rem;
+ background-color: #ffff;
+ min-height: 240px;
+ transition: 0.5s;
+ cursor: pointer;
+ margin-top: 1.5rem;
+}
+
+#countries div:hover{
+    transform: translateY(-1.5rem);
+}
+
+.btn{
+    padding:.5rem;
+    border-radius: .2rem;
+    border:none;
+    background-color:rgb(6, 29, 132);
+    color: #fff;
+    cursor: pointer;
+    font-size:1rem;
+    transform: background .3s;
+}
+.btn:hover{
+    background-color:red;
+}
+
+#county-infomaton{
+    width: 10%;
+    margin:auto;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    background-color:#fff;
+    padding: 0.5rem;
+    overflow-wrap: break-word;
+    border-radius:.3rem;
+    display: none;
+    z-index: 1;
+}
+
+#county-infomaton img{
+    width: 130px;
+    text-align: center;
+}
+#county-infomaton h3{
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+
+/* footer Strate Hear */
+footer{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #fff;
+}
+footer p{
+   padding: 30px;
+   padding-bottom: 0;
+}
+footer p a{
+    color: rgba(255, 255, 255, 0.403);
+}
+
+@media only screen and (max-width: 600px) {
+    #countries img {
+        width: 179px;
+        margin-top: 1rem;
+    }
+    
+  }
